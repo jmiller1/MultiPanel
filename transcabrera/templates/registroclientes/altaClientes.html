@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" href="{{STATIC_URL}}css/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<title>Intranet Transcabrera</title>
+
+</head>
+
+<body>
+	
+	<div id="container" style="height:750px;">
+		
+				<h1 class="cliente">Panel de Captura</h1>
+
+			<div id="left-side">
+				<div id="info">
+
+
+				</div>			
+
+				<div id="last-viajes">
+					
+
+				</div>
+			</div>
+			
+			<div id="right-side">
+			
+					<div class="titulo">
+
+						<h1>Clientes</h1>
+
+					</div>
+			{% csrf_token %} 
+				<div id="tab1">
+					<form method="POST" enctype="multipart/form-data" id="form-capturista" >
+						 {% csrf_token %} 
+						{{form}}
+						<button type="submit" class="form-btn">Guardar</button>
+					</form>
+				</div> <!--Termina Alta de Clientes -->
+
+					{% csrf_token %} 
+
+				<div id="tab2">
+					<form method="POST" enctype="multipart/form-data" id="form-capturista" >
+						 {% csrf_token %} 
+						{{form}}
+						<button type="submit" class="form-btn">Guardar</button>
+					</form><!-- Termina Alta de Viajes -->
+				</div>
+			</div>
+
+	</div>
+
+
+			<footer id="footer-container">
+			<p>Contáctanos <br>Tel: (444) 799.32.42 / Email: <a href="mailto:contacto@transcabrera.com">contacto@transcabrera.com</a><br>
+			 <a href="http://www.transcabrera.com" target="_new">www.transcabrera.com</a></p>
+	</footer>
+
+	</body>
+
+</html>

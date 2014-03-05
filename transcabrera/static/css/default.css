@@ -1,0 +1,255 @@
+* {
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+a { text-decoration: none; }
+
+a:hover { text-decoration: underline;}
+
+
+.cr { clear: right; }
+.cb { clear: both; }
+
+#container {
+	width: 960px;
+	height: 640px;
+	margin: 25px auto;
+
+}
+
+#questions {
+
+	width: 150px;
+	float: right;
+	padding-top: 35px;
+}
+
+#questions  p {
+
+	text-transform: uppercase;
+	font-size: 13px 
+
+}
+
+#questions  p a {
+
+	text-decoration: none;
+	color: #595959;
+
+}
+
+
+#questions p a:hover {
+
+	text-decoration: underline;
+}
+
+
+/* Log-in System Style*/
+
+
+#log-in {
+
+	width: 400px;
+	float: right;
+	margin-top: 100px;
+
+}
+
+#log-in h1 {
+
+	color: #2f2253;
+	font-size: 70px;
+	margin-left: -30px;
+
+}
+
+#log-in-form {
+
+	width: 400px;
+	margin-top: 100px;
+}
+
+
+
+#log-in-form label {
+	
+	color: #2f2253;
+	font-size: 16px;
+	display: inline-block;
+	width: 120px;
+	text-align: right;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+#log-in-form input {
+
+	padding: 5px;
+	width: 200px;
+}
+
+#log-in-form button {
+
+	background: #2f2253;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 35px;
+	margin-top: 25px;
+	margin-left: 260px
+}
+
+
+#log-in-form p {
+	margin-top: -25px;
+	margin-left: 35px;
+	
+
+}
+
+#log-in-form p a {
+
+	color: #808285;
+}
+
+#log-in-form p a:hover {
+
+	text-decoration: underline;
+}
+
+#wrapper {
+	background: url('../img/main-bg.png') no-repeat;
+	width: 960px;
+	margin: 0 auto;
+	height: 670px;
+}
+
+#footer-container {
+	background:  url('../img/bg_foot.png');
+	width: 100%;
+	height: 100px;
+}
+
+#footer-container p {
+	width: 960px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	line-height: 1.5em;
+	font-size: 14px;
+}
+
+#footer-container a {
+
+	color: white;
+}
+
+/* Panel Capturista */
+
+#left-side {
+
+	width: 250px;
+	float: left;
+	height: 650px;
+		background: #f1f2f2;
+
+}
+
+#right-side {
+
+	width: 700px;
+	height: 50px;
+	float: right;
+}
+
+#form-capturista label {
+	padding: 10px;
+	line-height: 3em;
+}
+
+.titulo {
+	background: #2f2253;
+	width: 700px;
+	height: 50px;
+}
+
+.titulo h1 {
+	font-size: 24px;
+	line-height: 2em;
+	font-weight: none;
+	color:white;
+	text-align: right;
+	margin-right: 50px;
+}
+
+#form-capturista input {
+	width: 120px;
+	padding: 3px;
+	display: inline;
+	border: 1px solid #beb2df;
+}
+
+#form-capturista textarea {
+
+		border: 1px solid #beb2df;
+}
+
+.form-btn {
+	background: #2f2253;
+	border: none;
+	color: white;
+	width: 100px;
+	height: 35px;
+
+}
+
+#last-viajes {
+
+	margin: 350px auto;
+	width: 150px;
+	padding: 25px;
+	height: 200px;
+	background: white;
+}
+
+#last-viajes h3 {
+
+	color: white;
+	line-height: 2em;
+	width: 170px;
+	padding: 10px;
+	margin-left: -20px;
+	margin-top: -20px;
+	text-align: center;
+	height: 30px;
+	background: #161028;
+}
+
+#last-viajes ul {
+
+	margin-top: 20px;
+}
+
+#last-viajes ul li{
+
+	list-style: none;
+	font-size: 12px;
+	height: 30px;
+
+}
+
+.cliente {
+	color: #2f2253;
+	font-size: 50px;
+	text-transform: uppercase;
+	padding: 10px;
+}

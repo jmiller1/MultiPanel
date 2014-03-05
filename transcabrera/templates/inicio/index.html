@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<link rel="stylesheet" href="{{STATIC_URL}}css/default.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<title>Intranet Transcabrera</title>
+
+</head>
+
+<body>
+	
+	<div id="container">
+		<div id="wrapper">
+			<div id="questions">
+				<p><a href="#">Ayuda</a> | <a href="#">F.A.Q.</a></p>
+
+			</div>
+
+
+			<div class="cr"></div>
+
+
+			<div id="log-in">
+				<h1>Bienvenido</h1>
+				 {% csrf_token %}
+				<div id="log-in-form">
+					<form method="POST">
+						{% csrf_token %}
+						<label>Usuario:</label> 
+							<input type="text" name="username" placeholder="Usuario"> <br>
+
+						<label>Contraseña:</label>
+							<input type="password" name="password" placeholder="Contraseña"> <br>
+						
+						<button type="submit" href="panel-redirect/">Accesar</button>
+						<p><a href="#">¿Olvidaste tu contraseña?</a></p>
+					</form>
+
+
+					
+			</div>
+		</div>
+	</div>
+	
+	<div class="cb"></div>
+
+
+
+	</div>
+
+		<footer id="footer-container">
+		<p>Contáctanos <br>Tel: (444) 799.32.42 / Email: <a href="mailto:contacto@transcabrera.com">contacto@transcabrera.com</a><br>
+		 <a href="http://www.transcabrera.com" target="_new">www.transcabrera.com</a></p>
+	</footer>
+</body>
+
+</html>
