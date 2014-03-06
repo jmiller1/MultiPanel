@@ -2,6 +2,9 @@ from django.views.generic import CreateView,TemplateView
 from .models import CapturarClientes,CapturarViajes
 from django.core.urlresolvers import reverse_lazy
 
+class CapturistaView(TemplateView):
+	template_name = 'capturista/panel-capturista.html'
+
 class AltaCliente(CreateView):
 	template_name = 'registroclientes/altaClientes.html'
 	model = CapturarClientes

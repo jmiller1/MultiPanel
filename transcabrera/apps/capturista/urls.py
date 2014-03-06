@@ -1,7 +1,9 @@
 from django.conf.urls import patterns, include, url
-from .views import AltaCliente,ClienteRegistrado 
+from .views import CapturistaView, AltaCliente, ClienteRegistrado 
 
 urlpatterns = patterns('',
+
+    url(r'^$', CapturistaView.as_view(), name="panel-capturista"),
 
 	url(r'^registrocliente/$' , AltaCliente.as_view() , name="alta_cliente"),
 
